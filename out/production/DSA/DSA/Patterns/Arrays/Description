@@ -1,0 +1,24 @@
+🧩 LEVEL 1 — BASIC ARRAY PATTERNS
+🧠 Pattern 1: Traversal (Basic Looping)
+
+Focus: Looping through arrays, indexing, printing, basic manipulation.
+
+#	Problem	Platform	Skill
+1	Print elements of an array	Any (write your own)	Basic for loop
+2	Find the sum of all elements	LeetCode / GFG	Accumulator logic
+3	Count even and odd numbers	Self	If-else + loop
+4	Count numbers > given value	Self	Condition inside loop
+5	Find the number of positive, negative, zero elements	GFG	Loop & conditions
+
+💡 Practice writing loops using both for and while.
+
+⚙️ LEVEL 2: Conditional & Two-Pointer Patterns
+Goal: Learn how to reduce complexity and handle pairs efficiently.
+| #  | Pattern Name                   | Concept                     | Example Problem                              |
+| -- | ------------------------------ | --------------------------- | -------------------------------------------- |
+| 6  | **Two Sum Pattern**            | Check pairs with sum target | Find if two numbers add to `k`               |
+| 7  | **Two Pointers Opposite Ends** | Shrinking window            | Check if array is palindrome                 |
+| 8  | **Sliding Window**             | Maintain window sum         | Find max sum of subarray of size k           |
+| 9  | **Prefix Sum**                 | Precompute running totals   | Find subarray sum quickly                    |
+| 10 | **Difference Array**           | Range updates               | Increment values in given ranges efficiently |
+🧠 Learn skill: Optimize O(n²) → O(n) using smart traversal.
