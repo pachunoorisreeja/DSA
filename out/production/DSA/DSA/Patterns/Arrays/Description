@@ -12,7 +12,7 @@ Focus: Looping through arrays, indexing, printing, basic manipulation.
 
 💡 Practice writing loops using both for and while.
 
-⚙️ LEVEL 2: Conditional & Two-Pointer Patterns
+⚙️ LEVEL 2: Conditional & Two-Pointer Patterns (: Two-Pointer + Sliding Window Patterns)
 Goal: Learn how to reduce complexity and handle pairs efficiently.
 | #  | Pattern Name                   | Concept                     | Example Problem                              |
 | -- | ------------------------------ | --------------------------- | -------------------------------------------- |

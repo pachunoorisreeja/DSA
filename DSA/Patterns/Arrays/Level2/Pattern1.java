@@ -1,7 +1,5 @@
 package DSA.Patterns.Arrays.Level2;
 
-import javax.sound.midi.Soundbank;
-
 //
 public class Pattern1 {
     public static void main(String[] args) {
@@ -13,6 +11,16 @@ public class Pattern1 {
         int[] arr2 = {1, 2, 3, 4, 6};
         int target = 6;
         twoSumTargetSorted(arr2, target);
+        int[] arr3 = {1, 1, 2, 2, 3, 4, 4};
+        System.out.println("removeDuplicates");
+        int len = removeDuplicates(arr3);
+        System.out.println();
+        for (int i=0;i<len;i++){
+            System.out.print(arr3[i]+"\t");
+        }
+        int[] arr4 = {2, 1, 5, 1, 3, 2};
+        int k=3;
+        System.out.println("maxSumOfSubArray "+maxSumOfSubArray(arr4,k));//🧾 Output → 9 (subarray [5, 1, 3])
 
     }
     public static void reverseAnArrayInPlace(int[] arr) {
@@ -62,5 +70,28 @@ while (left<right){
 }
 
     }
+    public static int removeDuplicates(int arr[]){
+        int i=0;
+        for(int j=1;j<arr.length;j++){
+            if (arr[i]!=arr[j]){
+                i++;
+                arr[i]=arr[j];
+            }
+        }
+        return i+1;
+    }
+    public static int maxSumOfSubArray(int arr[], int k){
+
+        int windowSum =0;
+        for (int i=0;i<k;i++){
+            windowSum+=arr[i];
+        }
+        int max = windowSum;
+        for (int end =k;end<arr.length;end++){
+            windowSum+=arr[end]-arr[end-k];
+            max =Math.max(max, windowSum);
+        }
+
+    return max;}
 
     }

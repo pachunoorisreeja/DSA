@@ -1,0 +1,24 @@
+🚀 LEVEL 1 — Basic String Patterns (Beginner)
+
+Focus: Character traversal, counting, simple string logic.
+    Pattern 1: String Traversal
+            1. Print each character of a string.
+            2. Count vowels in a string.
+            3. Count uppercase, lowercase, digits, and special characters.
+            4. Count frequency of a given character.
+            5. Count words in a sentence (using split).
+
+    Pattern 2: Reverse Operations
+            1. Reverse a string manually (no built-in reverse).
+            2. Reverse each word in a sentence.
+            3. Reverse the order of words in a sentence.
+            4. Check if two strings are reverses of each other.
+    Pattern 3: Palindrome Checks
+            1. Check if a string is a palindrome.
+            2. Check if a sentence is a palindrome (ignore spaces & case).
+            3. Find all palindrome substrings (beginner-level brute force).
+    Pattern 4: Frequency / Counting
+            1. Count occurrence of each character using arrays.
+            2. Count occurrence of each character using HashMap.
+            3. Find first non-repeating character.
+            4. Find first repeating character.
