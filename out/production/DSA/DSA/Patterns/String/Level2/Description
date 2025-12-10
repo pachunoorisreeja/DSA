@@ -1,0 +1,19 @@
+LEVEL 2 — STRING PATTERNS WITH JAVA CODE
+    1. TWO-POINTER STRING PROBLEMS
+        a) Remove extra spaces from a string
+        b) Remove all occurrences of a character
+        c) Check if two strings are anagrams (sorting method)
+        d) Check if two strings are anagrams (frequency method)
+        e) Lexicographical (dictionary) comparison
+
+    2. Sliding Window String Problems
+        Sliding Window is used for
+        🔹 longest substring
+        🔹 smallest substring
+        🔹 K-distinct chars
+        🔹 repeating character problems
+        a) Longest substring without repeating characters
+        b) Longest substring with K distinct characters
+        c) Smallest substring containing all characters of a pattern
+        d) Find substring with exactly K vowels
+        e) Longest substring with same characters after K replacements

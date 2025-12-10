@@ -22,3 +22,15 @@ Goal: Learn how to reduce complexity and handle pairs efficiently.
 | 9  | **Prefix Sum**                 | Precompute running totals   | Find subarray sum quickly                    |
 | 10 | **Difference Array**           | Range updates               | Increment values in given ranges efficiently |
 🧠 Learn skill: Optimize O(n²) → O(n) using smart traversal.
+
+**Sliding Window**
+💡 Concept:
+
+Use a window (contiguous subset) that slides through the array/string to find:
+Maximum/Minimum subarray sum
+Longest substring
+Count of subarrays matching criteria
+⚙️ Core Idea:
+Keep two pointers — start, end
+Expand the window
+Shrink when condition breaks
