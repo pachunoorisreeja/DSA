@@ -3,8 +3,8 @@ package DSA.Patterns.Arrays.Level1.Practice;
 
 public class Pattern1 {
     public static void main(String[] args) {
-        int arr[] = new int[]{1,2,-2,3,-1,0,1,-2,-4,0,9,0};
-        System.out.println("Given array: "+"{1,2,-2,3,-1,0,1,-2,-4,0,9,0}");
+        int arr[] = new int[]{1, 2, -2, 3, -1, 0, 1, -2, -4, 0, 9, 0};
+        System.out.println("Given array: " + "{1,2,-2,3,-1,0,1,-2,-4,0,9,0}");
         // 1. Print all positive elements in the array.
         System.out.println("Print All Positive Numbers ");
         printAllPostiveNumbersInArrays(arr);
@@ -28,10 +28,10 @@ public class Pattern1 {
         countTheNumberOfElementsSmallerThanX(arr, 2);
         // 8. Find the index of the first occurrence of a number.
         System.out.println("Index of first occurance of given Number");
-        findIndexOfFirstOccuranceOfNumber(arr,1);
+        findIndexOfFirstOccuranceOfNumber(arr, 1);
         // 9. Find the index of the last occurrence of a number.
         System.out.println("Index of Last Occurance of a number");
-        findIndexOfLastOccuranceOfNumber(arr, -2);
+        findIndexOfLastOccurenceOfNumber(arr, -2);
         // 10. Print array elements in pairs (arr[i], arr[i+1]).
         System.out.println("Print pairs like arr[i], arr[i+1]");
         printArrayInParOfTwoSideBySide(arr);
@@ -40,56 +40,82 @@ public class Pattern1 {
         printElementsExceptFirstAndLast(arr);
         // 12. Find the total number of zeros in the array.
         System.out.println("total numbers of zeros");
-        printTotalNumberOfZeros(arr);
+        countZeros(arr);
 
     }
-    public static void printAllPostiveNumbersInArrays(int arr[]){
-        for (int i: arr){
-            if(i>0){
-                System.out.print(i+" ");
+
+    public static void printAllPostiveNumbersInArrays(int arr[]) {
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
+        for (int i : arr) {
+            if (i > 0) {
+                System.out.print(i + " ");
             }
         }
         System.out.println();
     }
-    public static void printAllNegavtiveNumbersInArrays(int arr[]){
-        for (int i: arr){
-            if(i<0){
-                System.out.print(i+" ");
+
+    public static void printAllNegavtiveNumbersInArrays(int arr[]) {
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
+        for (int i : arr) {
+            if (i < 0) {
+                System.out.print(i + " ");
             }
         }
         System.out.println();
     }
-    public static void printAllElementsAtEvenIndicesInArrays(int arr[]){
-        int count = 0;
+
+    public static void printAllElementsAtEvenIndicesInArrays(int arr[]) {
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
         System.out.println("Elements at even indices: ");
-        for (int i: arr){
-            if(count++%2==0) {
-                System.out.print(i + " ");
-            }
+        for (int i = 0; i < arr.length; i += 2) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
+
+
     }
+
     public static void printAllElementsAtOddIndicesInArrays(int arr[]) {
-        int count = 0;
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
         System.out.println("Elements at Odd indices: ");
-        for (int i: arr){
-            if(count++%2!=0) {
-                System.out.print(i + " ");
-            }
+        for (int i = 1; i < arr.length; i += 2) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
 
     }
+
     public static void countTheNumberOfElementsDivisibleByThree(int arr[]) {
-        int count =0;
-        for (int i: arr){
-            if(i%3 == 0){
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
+        int count = 0;
+        for (int i : arr) {
+            if (i % 3 == 0) {
                 count++;
             }
         }
-        System.out.println("Number of Elements Divisible by three is: "+count);
+        System.out.println("Number of Elements Divisible by three is: " + count);
     }
+
     public static void countTheNumberOfElementsGreaterThanX(int arr[], int x) {
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
         int count = 0;
         for (int i : arr) {
             if (i > x) {
@@ -97,54 +123,87 @@ public class Pattern1 {
             }
         }
 
-        System.out.println("Number of Elements Greater Than "+x+" is "+count);
-        }
+        System.out.println("Number of Elements Greater Than " + x + " is " + count);
+    }
+
     public static void countTheNumberOfElementsSmallerThanX(int arr[], int x) {
-    int count =0;
-    for(int i: arr){
-        if(i<x){
-            count++;
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
         }
-    }
-        System.out.println("Number of Elements Less Than "+x+" is "+count);
-    }
-    public static void findIndexOfFirstOccuranceOfNumber(int arr[], int x){
-        for (int i=0;i<arr.length;i++){
-            if(arr[i]==x){
-                System.out.println("Index of First Ocurrance Of Given Number "+x+" is "+i);
-                break;
+        int count = 0;
+        for (int i : arr) {
+            if (i < x) {
+                count++;
             }
         }
+        System.out.println("Number of Elements Less Than " + x + " is " + count);
     }
-    public static void findIndexOfLastOccuranceOfNumber(int arr[], int x) {
-    for (int i=arr.length-1;i>=0;i--){
-        if (arr[i]==x){
-            System.out.println("Index of Last Ocurrance Of Given Number "+x+" is "+i);
-            break;
+
+    public static void findIndexOfFirstOccuranceOfNumber(int arr[], int x) {
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                System.out.println("Index of First Ocurrance Of Given Number " + x + " is " + i);
+                return;
+            }
+            System.out.println(x + " element not found in the array");
         }
     }
+
+    public static void findIndexOfLastOccurenceOfNumber(int arr[], int x) {
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == x) {
+                System.out.println("Last occurrence of " + x + " is at index: " + i);
+                return;
+            }
+
+        }System.out.println(x + " is not found");
     }
     public static void printArrayInParOfTwoSideBySide(int arr[]) {
+        if(arr == null || arr.length == 0){
+            System.out.println("Array is empty or null");
+            return ;
+        }
         for (int i=0;i<arr.length-1;i++){
-            System.out.print(arr[i]+", "+arr[i+1]);
+            System.out.print("("+arr[i]+", "+arr[i+1]+")");
         }
         System.out.println();
 
         }
     public static void printElementsExceptFirstAndLast(int arr[]) {
+        if(arr.length <3){
+            System.out.println("Now element exist betwenn first and last");
+            return;
+        }
+        if(arr == null || arr.length == 0){
+            System.out.println("Array is empty or null");
+            return ;
+        }
         for (int i=1;i<arr.length-1;i++){
             System.out.print(arr[i]+" ");
         }
         System.out.println();
             }
-    public static void printTotalNumberOfZeros(int arr[]){
+    public static void countZeros(int arr[]){
+        if(arr == null || arr.length == 0){
+            System.out.println("Array is empty or null");
+            return ;
+        }
         int count=0;
         for (int i: arr){
             if (i==0) {
                 count++;
             }
         }
-        System.out.println("count "+count);
+        System.out.println("Total zeros in array: "+count);
     }
 
     }

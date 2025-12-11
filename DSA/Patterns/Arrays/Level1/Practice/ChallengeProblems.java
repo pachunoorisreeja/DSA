@@ -14,7 +14,16 @@ Create a new array that contains the difference arr[i] – arr[i-1].
 */
 public class ChallengeProblems {
     public static void main(String[] args) {
+        System.out.println("printArrayReplaceNegavtiveWithZero");
         printArrayReplaceNegavtiveWithZero(new int[]{1,2,-2,45,345,35,345,35,});
+        System.out.println("printArrayReplaceEvenNoWithOne");
+        printArrayReplaceEvenNoWithOne(new int[]{2,3,4,54,6,7,9,5,3,11});
+        System.out.println("printArrayReplaceALlZeroWithOne");
+        printArrayReplaceALlZeroWithOne(new int[]{3,0,9,0,34,0,5,6,0});
+        System.out.println("shiftAllZerosToEnd");
+        shiftAllZerosToEnd(new int[]{1,2,3,0,8,0,5,0,5,0});
+        System.out.println("shiftAllZerosToFront");
+        shiftAllZerosToFront(new int[]{1,0,2,0,3,0,5,7});
 
     }
     public static void printArrayReplaceNegavtiveWithZero(int arr[]){
@@ -22,8 +31,9 @@ public class ChallengeProblems {
             if (arr[i]<0){
                 arr[i]=0;
                 System.out.print(arr[i]+" ");
+            }else {
+                System.out.print(arr[i] + " ");
             }
-            System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
@@ -32,8 +42,9 @@ public class ChallengeProblems {
             if (arr[i]%2==0){
                 arr[i]=1;
                 System.out.print(arr[i]+" ");
+            }else {
+                System.out.print(arr[i] + " ");
             }
-            System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
@@ -42,8 +53,9 @@ public class ChallengeProblems {
             if (arr[i]==0){
                 arr[i]=1;
                 System.out.print(arr[i]+" ");
+            }else {
+                System.out.print(arr[i] + " ");
             }
-            System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
