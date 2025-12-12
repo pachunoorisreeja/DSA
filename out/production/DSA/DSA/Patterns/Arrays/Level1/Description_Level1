@@ -1,0 +1,67 @@
+🧩 LEVEL 1 — BASIC ARRAY PATTERNS
+🧠 Pattern 1: Traversal (Basic Looping)
+
+Focus: Looping through arrays, indexing, printing, basic manipulation.
+| # | Problem                                              | Platform             | Skill                 |
+| - | ---------------------------------------------------- | -------------------- | --------------------- |
+| 1 | Print elements of an array                           | Any (write your own) | Basic for loop        |
+| 2 | Find the sum of all elements                         | LeetCode / GFG       | Accumulator logic     |
+| 3 | Count even and odd numbers                           | Self                 | If-else + loop        |
+| 4 | Count numbers > given value                          | Self                 | Condition inside loop |
+| 5 | Find the number of positive, negative, zero elements | GFG                  | Loop & conditions     |
+💡 Practice writing loops using both for and while.
+🔁 Pattern 2: Reverse Traversal
+
+Focus: Indexing, reverse order, careful boundaries.
+| # | Problem                           | Platform                                                                       | Skill                  |
+| - | --------------------------------- | ------------------------------------------------------------------------------ | ---------------------- |
+| 1 | Print array in reverse            | Self                                                                           | Loop from `n-1` to `0` |
+| 2 | Reverse array elements (in-place) | LeetCode: [Reverse String #344](https://leetcode.com/problems/reverse-string/) | Two-pointer logic      |
+| 3 | Print alternate elements from end | Self                                                                           | Step control in loop   |
+💡 Understand indexing: last element = arr[arr.length - 1].
+
+➕ Pattern 3: Sum / Product Pattern
+Focus: Aggregation, simple arithmetic with arrays.
+| # | Problem                                   | Platform                     | Skill                |
+| - | ----------------------------------------- | ---------------------------- | -------------------- |
+| 1 | Sum of elements                           | GFG: “Sum of Array Elements” | Summation            |
+| 2 | Average of elements                       | Self                         | Division after sum   |
+| 3 | Product of all elements                   | Self                         | Multiplication logic |
+| 4 | Find sum of even-indexed elements         | Self                         | Condition on index   |
+| 5 | Find difference between even and odd sums | Self                         | Logic building       |
+💡 Try to do all in one loop — practice accumulation.
+🏆 Pattern 4: Find Min / Max Element
+Focus: Comparisons, updating tracking variables.
+
+| # | Problem                                      | Platform       | Skill                         |
+| - | -------------------------------------------- | -------------- | ----------------------------- |
+| 1 | Find largest element in array                | GFG / LeetCode | `max = Math.max(max, arr[i])` |
+| 2 | Find smallest element                        | GFG            | `min = Math.min(min, arr[i])` |
+| 3 | Find 2nd largest element                     | GFG            | Sorting or tracking           |
+| 4 | Find difference between largest and smallest | Self           | Combine min & max logic       |
+| 5 | Check if array is sorted                     | LeetCode Easy  | Adjacent comparisons          |
+💡 These are must-know problems — asked in every interview.
+🔢 Pattern 5: Counting / Frequency []
+
+Focus: Counting values — use extra arrays or HashMaps.
+| # | Problem                                | Platform                                                                                                    | Skill               |
+| - | -------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------- |
+| 1 | Count occurrences of a given number    | Self                                                                                                        | Counter variable    |
+| 2 | Find element frequency (simple array)  | GFG                                                                                                         | Nested loops        |
+| 3 | Find element frequency (using HashMap) | LeetCode Easy                                                                                               | HashMap intro       |
+| 4 | Find most frequent element             | GFG                                                                                                         | Max frequency logic |
+| 5 | Count unique elements                  | LeetCode: [Unique Number of Occurrences #1207](https://leetcode.com/problems/unique-number-of-occurrences/) | HashSet logic       |
+💡 Mastering frequency problems prepares you for 2-pointer and hashing patterns.
+
+
+
+Summary:
+📌 LEVEL 1 — Basic Array Patterns
+| **Pattern No.** | **Pattern Name**           | **Concept Summary**                       | **Common Interview Problems**                            | **Difficulty** |
+| --------------- | -------------------------- | ----------------------------------------- | -------------------------------------------------------- | -------------- |
+| **Pattern 1**   | **Traversal Patterns**     | Iterate through array, inspect each value | Print positives, negatives, even indices, count elements | Easy           |
+| **Pattern 2**   | **Reverse Traversal**      | Traverse from end or using backward jumps | Print reverse, alternate reverse, reverse half           | Easy           |
+| **Pattern 3**   | **Sum / Product Patterns** | Compute sum/product based on conditions   | Sum even numbers, prefix sum, suffix sum                 | Easy           |
+| **Pattern 4**   | **Min / Max Patterns**     | Track smallest/largest values             | Find max, min, 2nd max/min, diff max-min                 | Easy           |
+| **Pattern 5**   | **Two-Pointer Basics**     | Use two pointers to process array faster  | Move zeros, reverse array, swap halves                   | Easy–Medium    |
+

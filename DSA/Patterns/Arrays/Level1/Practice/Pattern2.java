@@ -15,7 +15,7 @@ public class Pattern2 {
         printAlternativeElementsFromEnd(arr);
         // 15. Print array elements starting from middle → outward.
         System.out.println("Printing Elements Starting From Middle");
-        printElementsFromMiddleToLast(arr);
+        printElementsFromMiddleTOutward(new int[]{1,2,3,4,5,6});
         // 16. Print every second element in reverse.
         System.out.println("Printing Every Second Element In reverse");
         printEverySecondElementFromLast(arr);
@@ -43,34 +43,80 @@ public class Pattern2 {
                 System.out.println();
 }
     public static void printElementsInReverseOrder(int arr[]){
+        if(arr == null || arr.length == 0){
+            System.out.println("Array is empty or null");
+            return;
+        }
+        System.out.print("Reverse: ");
         for(int i=arr.length-1;i>=0;i--){
             System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
     public static void printAlternativeElementsFromEnd(int arr[]){
+        if(arr == null || arr.length == 0){
+            System.out.println("Array is empty or null");
+            return;
+        }
+        System.out.print("Alternate elements from end: ");
         for (int i=arr.length-1;i>=0;i-=2){
             System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
-    public static void printElementsFromMiddleToLast(int arr[]){
-        int start =arr.length/2;
-        if(arr.length%2!=0){
-            start +=1;
+    public static void printElementsFromMiddleTOutward(int arr[]){
+        int result[] = new int[arr.length];
+        if(arr ==  null || arr.length == 0) {
+            System.out.println("Array is null or empty");
+            return;
         }
-        for (int i=start;i<arr.length;i++){ // 1,2,3,4,5,6,7,8,9,10,11 // 5
-            System.out.print(arr[i]+" ");
+        int middle = 0;
+        int count =1;
+        if(arr.length%2 ==0){
+            middle = (arr.length/2)-1;
+        }else{
+            middle = arr.length/2;
+        }
+        System.out.println("Printing Elements from Middle to Ouward");
+        result[0] = arr[middle];
+        int left = middle-1;
+        int right = middle+1;
+
+        while (left >=0 && right<arr.length){
+            result[count++] = arr[left--];
+            result[count++] = arr[right++];
+
+        }
+        while (left >=0 ){
+            result[count++] = arr[left--];
+
+        }
+        while (right<arr.length){
+            result[count++] = arr[right++];
+
+        }
+
+
+        for (int k:result){
+            System.out.print(k+" ");
         }
         System.out.println();
     }
     public static void printEverySecondElementFromLast(int arr[]){
+        if (arr == null || arr.length ==0) {
+            System.out.println("Array is null or empty");
+            return;
+        }
         for (int i = arr.length-1;i>=0;i-=2){
             System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
     public static void reverseAnArray(int arr[]){
+        if (arr == null || arr.length ==0) {
+            System.out.println("Array is null or empty");
+            return;
+        }
         int left =0, right = arr.length-1;
         while (left<right){
             int temp =arr[left];
@@ -86,7 +132,11 @@ public class Pattern2 {
         System.out.println();
     }
     public static void reverseOnlyFirstHalfOftheArray(int arr[]){
-        int left = 0, right =(arr.length/2)-1;  // 1,2,3,4,5,6,7,8,9,10 //  5 odd, 5, /2 -1; even  -2
+        if (arr == null || arr.length ==0) {
+            System.out.println("Array is null or empty");
+            return;
+        }
+        int left = 0, right =(arr.length/2)-1;
         while (left<right) {
             int temp = arr[left];
             arr[left] = arr[right];
@@ -100,8 +150,11 @@ public class Pattern2 {
 
     }
     public static void reverseOnlySecondHalfOftheArray(int arr[]){
-        int right = arr.length-1, left =(arr.length/2); //when even, else +1 ;
-        // 1,2,3,4,5,6,7,8,9,10,11
+        if (arr == null || arr.length ==0) {
+            System.out.println("Array is null or empty");
+            return;
+        }
+        int right = arr.length-1, left =(arr.length/2);
         if(arr.length%2!=0){
             left = (arr.length/2)+1;
         }

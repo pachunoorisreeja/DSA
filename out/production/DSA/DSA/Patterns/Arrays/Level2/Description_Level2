@@ -1,0 +1,110 @@
+🚀 LEVEL 2: Two-Pointer + Sliding Window Patterns
+⭐ ARRAY LEVEL-2 PATTERN CONCEPTS
+
+🧠 Pattern 6: Frequency / Counting Pattern
+Focus: Counting occurrences of elements using HashMap / frequency array.
+Used for duplicates, majority element, character counts, and frequency-based logic.
+| # | Problem                                                       | Platform   | Skill                      |
+| - | ------------------------------------------------------------- | ---------- | -------------------------- |
+| 1 | Count frequency of each element                               | GFG / Self | HashMap basics             |
+| 2 | Find element appearing more than n/2 times (Majority Element) | LeetCode   | Moore’s Voting / Frequency |
+| 3 | Count distinct elements                                       | GFG        | HashSet usage              |
+| 4 | Check if two arrays are equal (frequency-based)               | GFG        | Frequency comparison       |
+| 5 | Find elements occurring more than k times                     | Self       | Counting + Conditions      |
+💡 Practice using both HashMap and array-based frequency (for limited element range).
+
+🧠 Pattern 7: Prefix Sum / Suffix Sum Pattern
+Focus: Precomputing prefix and suffix sums for O(1) queries.
+| # | Problem                                          | Platform | Skill                     |
+| - | ------------------------------------------------ | -------- | ------------------------- |
+| 1 | Compute prefix sum array                         | Self     | Prefix computation        |
+| 2 | Compute suffix sum array                         | Self     | Suffix computation        |
+| 3 | Range sum query (L to R) using prefix sum        | LeetCode | Prefix difference formula |
+| 4 | Find equilibrium index                           | GFG      | Prefix + Suffix logic     |
+| 5 | Check if array can be split into equal-sum parts |          |                           |
+
+🧠 Pattern 8: Sliding Window (Fixed + Variable Window)
+
+Focus:
+Use two pointers (left, right) to maintain a window.
+Efficient for subarray sum, longest/shortest subarray, K distinct elements, etc.
+| # | Problem                                           | Platform       | Skill                     |
+| - | ------------------------------------------------- | -------------- | ------------------------- |
+| 1 | Maximum sum subarray of size K                    | LeetCode / GFG | Fixed-size sliding window |
+| 2 | First negative number in every window of size K   | GFG            | Window maintenance        |
+| 3 | Longest subarray with sum ≤ K                     | Self           | Variable window           |
+| 4 | Longest subarray with at most K distinct elements | LeetCode       | Window + HashMap          |
+| 5 | Minimum size subarray with sum ≥ target           | LeetCode       | Shrinking window          |
+
+💡 Sliding window is basically two pointers + conditions.
+
+🧠 Pattern 9: Two-Pointer (Advanced, Mostly Sorted Arrays)
+Focus:
+Use two pointers from either end or adjacent to avoid nested loops.
+Used mainly on sorted arrays.
+| # | Problem                             | Platform       | Skill                      |
+| - | ----------------------------------- | -------------- | -------------------------- |
+| 1 | Two-sum in sorted array             | LeetCode       | Move left/right pointers   |
+| 2 | Remove duplicates from sorted array | LeetCode       | In-place write pointer     |
+| 3 | Count pairs with given sum          | GFG            | Two-pointer sum check      |
+| 4 | Check if array is a palindrome      | Self           | Symmetric pointer movement |
+| 5 | Merge two sorted arrays             | LeetCode / GFG | Dual-pointer merge         |
+
+💡 If the array is sorted → think two-pointers first.
+
+🧠 Pattern 10: Searching / Binary Search Patterns
+
+Focus:
+Binary search on value, index, rotated arrays, or answer space.
+Huge pattern in FAANG.
+
+| # | Problem                            | Platform       | Skill                   |
+| - | ---------------------------------- | -------------- | ----------------------- |
+| 1 | Binary search basic                | LeetCode / GFG | Logarithmic search      |
+| 2 | First & last occurrence of element | LeetCode       | Lower/upper bound       |
+| 3 | Search in rotated sorted array     | LeetCode       | Modified binary search  |
+| 4 | Peak element in mountain array     | LeetCode       | Binary search on answer |
+| 5 | Find floor/ceil of a number        | GFG            | Boundary search         |
+
+💡 Binary search is not only for “searching elements”, but also ranges and conditions.
+
+🧠 Pattern 11: Sorting-Based Patterns
+Focus:
+Sort first → solve problems easily using scanning or two-pointers.
+| # | Problem                                   | Platform | Skill                 |
+| - | ----------------------------------------- | -------- | --------------------- |
+| 1 | Sort colors (Dutch National Flag)         | LeetCode | Sorting + pointers    |
+| 2 | Three-sum (find triplets equal to 0)      | LeetCode | Sort + 2-pointer      |
+| 3 | Find Kth smallest/largest                 | GFG      | Sort / Quickselect    |
+| 4 | Merge intervals                           | LeetCode | Sort + merge sweep    |
+| 5 | Minimum difference between array elements | Self     | Sorting + linear scan |
+💡 Sorting converts many hard O(n²) problems into O(n log n) + O(n).
+
+.
+
+🎉 ALL LEVEL-2 PATTERNS ARE NOW COVERED:
+| Pattern | Name                      |
+| ------- | ------------------------- |
+| 6       | Frequency / Counting      |
+| 7       | Prefix / Suffix           |
+| 8       | Sliding Window            |
+| 9       | Two Pointer (Advanced)    |
+| 10      | Searching / Binary Search |
+| 11      | Sorting-Based             |
+
+
+
+
+
+
+
+Summary:
+📌 LEVEL 2 — Intermediate Array Patterns
+| **Pattern No.** | **Pattern Name**                      | **Concept Summary**                 | **Common Interview Problems**                             | **Difficulty** |
+| --------------- | ------------------------------------- | ----------------------------------- | --------------------------------------------------------- | -------------- |
+| **Pattern 6**   | **Frequency / Counting Patterns**     | Build freq array or HashMap         | Count occurrences, majority element, mode                 | Medium         |
+| **Pattern 7**   | **Prefix / Suffix Array Patterns**    | Build prefix/suffix sum arrays      | Prefix sum, range sum query, equilibrium index            | Medium         |
+| **Pattern 8**   | **Sliding Window (Fixed / Variable)** | Maintain window with L & R pointers | Max sum subarray K, longest subarray with condition       | Medium         |
+| **Pattern 9**   | **Two-Pointer Advanced**              | Sorted-array operations             | Pair sum, remove duplicates, merge sorted arrays          | Medium         |
+| **Pattern 10**  | **Searching Patterns**                | Binary search and variants          | Find first occurrence, peak element, search rotated array | Medium–Hard    |
+| **Pattern 11**  | **Sorting-Based Patterns**            | Leverage sorting for optimization   | Three-sum, closest pair, sort colors                      | Medium         |

@@ -24,6 +24,10 @@ public class Pattern4 {
         largestNegavtiveNumber(new int[]{-43554,334,435,-34,-1,45,-453,-345});
     }
     public static void secondSmallestElement(int arr[]){
+        if (arr == null || arr.length < 2) {
+            System.out.println("Array does not have enough elements");
+            return;
+        }
         int small = Integer.MAX_VALUE;;
         int secondSmall = Integer.MAX_VALUE;;
         for (int i: arr){
@@ -34,7 +38,11 @@ public class Pattern4 {
                 secondSmall = i;
             }
         }
-        System.out.println("Second Smallest "+secondSmall);
+        if (secondSmall == Integer.MAX_VALUE) {
+            System.out.println("No second smallest element exists");
+        } else {
+            System.out.println("Second Smallest: " + secondSmall);
+        }
 
     }
     public static void secondLargestElement(int arr[]){
@@ -45,15 +53,20 @@ public class Pattern4 {
                 secondLargest = largest;
                 largest =i;
             }
-            else if (i!=largest && i>secondLargest){
+            else if (i<largest && i>secondLargest){
                 secondLargest =i;
             }
         }
-        System.out.println("Second largest "+secondLargest);
+        if (secondLargest == Integer.MIN_VALUE) {
+            System.out.println("No second largest element exists");
+        } else {
+            System.out.println("Second Largest: " + secondLargest);
+        }
 
 
     }
     public static void SmallestAtEvenIndex(int arr[]){
+        if (arr == null || arr.length == 0) return;
         int smallest = arr[0];
         for (int i=0;i<arr.length;i+=2){
             if (arr[i]<smallest){
@@ -64,8 +77,12 @@ public class Pattern4 {
 
     }
     public static void largestAtOddIndex(int arr[]){
-        int largest = arr[0];
-        for (int i=1;i<arr.length;i+=2){
+        if (arr.length < 2) {
+            System.out.println("No odd index exists");
+            return;
+        }
+        int largest = arr[1];
+        for (int i=3;i<arr.length;i+=2){
             if (arr[i]>largest){
                 largest = arr[i];
             }
@@ -86,17 +103,15 @@ public class Pattern4 {
 
 
     }
-    public static void howManyTimesMaxOccurs(int arr[]){
-        int max = arr[0], count =0;
-        for (int i:arr){
-            if(i>max)
-                max =i;
+    public static void howManyTimesMaxOccurs(int arr[]) {
+        int max = arr[0], count = 0;
+        for (int i : arr) {
+            if (i > max){
+                max = i;}
+        else if (max == i) {
+            count++;
         }
-        for (int i:arr){
-            if(i==max) {
-                count++;
-            }
-        }
+    }
         System.out.println("Max "+max+"  occurs "+count);
         }
     public static void howManyTimesMinOccurs(int arr[]){
@@ -127,21 +142,31 @@ public class Pattern4 {
 
     }
     public static void smallestPostiveNumber(int arr[]){
-        int min =1;
+        int min = Integer.MAX_VALUE;
         for (int i:arr){
             if(i>0 && i<min){
                 min =i;
             }
         }
-        System.out.println("Smallest postive Number is "+min);
+        if (min == Integer.MAX_VALUE) {
+            System.out.println("No positive number exists");
+        } else {
+            System.out.println("Smallest positive number: " + min);
+        }
     }
     public static void largestNegavtiveNumber(int arr[]){
-        int max = -12345;
+        int max = Integer.MIN_VALUE;
+        boolean found = false;
+
         for (int i: arr){
             if(i<0 && i> max){
                 max = i;
+                found = true;
             }
         }
-        System.out.println("Largest negavtive number "+max);
+        if (!found)
+            System.out.println("No negative number exists");
+        else
+            System.out.println("Largest negative number: " + max);
     }
 }

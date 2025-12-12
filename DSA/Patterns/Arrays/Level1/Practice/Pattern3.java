@@ -25,6 +25,10 @@ public class Pattern3 {
         computeSuffixSum(new int[]{1,2,3,4,5});
     }
     public static void averageOfAllElement(int arr[]){
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         double avg =0.0d;
         for (int i: arr){
             avg+=i;
@@ -32,6 +36,10 @@ public class Pattern3 {
         System.out.println("Average of arr elements is "+avg/arr.length);
     }
     public static void sumOfOnlyEvenElements(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         int evenSUm = 0;
         for (int i: arr){
             if(i%2==0){
@@ -42,6 +50,10 @@ public class Pattern3 {
 
     }
     public static void sumOfOnlyOddElements(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         int oddSum =0;
         for (int i: arr){
             if(i%2!=0){
@@ -51,6 +63,10 @@ public class Pattern3 {
         System.out.println("Odd Sum: "+oddSum);
         }
     public static void productOfAllElements(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         long productOfAll = 1;
         for (int i: arr){
             productOfAll*=i;
@@ -59,6 +75,10 @@ public class Pattern3 {
 
     }
     public static void productOfPositiveElements(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         long product = 1;
 
         for (int i : arr) {
@@ -70,6 +90,10 @@ public class Pattern3 {
         System.out.println("Product of +ve Numbers "+product);
     }
     public static void diffSumofEvenIndexOddIndexedElements(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         int evenIndexedSum =0, oddIndexedSum = 0;
         for (int i=0;i<arr.length;i++){
             if (i%2==0){
@@ -82,6 +106,10 @@ public class Pattern3 {
 
     }
     public static void countThePairsWhoseSumIsEven(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         int count=0;
         for (int i=0;i<arr.length;i++){
             for (int j=i+1;j<arr.length;j++){
@@ -94,6 +122,10 @@ public class Pattern3 {
 
     }
     public static void countThePairsWhoseSumIsOdd(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         int count=0;
         for (int i=0;i<arr.length;i++){
             for (int j=i+1;j<arr.length;j++){
@@ -105,6 +137,10 @@ public class Pattern3 {
         System.out.println("Odd sum Count "+count);
     }
     public static void computePrefixSum(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         int prefix[] = new int[arr.length];
         int sum=0;
         for (int i=0;i<arr.length;i++){
@@ -119,6 +155,10 @@ public class Pattern3 {
     }
 
     public static void computeSuffixSum(int arr[]) {
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         int prefix[] = new int[arr.length];
         int sum=0;
         for (int i=arr.length-1;i>=0;i--){

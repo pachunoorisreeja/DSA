@@ -1,0 +1,13 @@
+
+
+
+Summary:
+📌 LEVEL 3 — Advanced Array Patterns
+| **Pattern No.** | **Pattern Name**                     | **Concept Summary**                    | **Common Interview Problems**                                | **Difficulty** |
+| --------------- | ------------------------------------ | -------------------------------------- | ------------------------------------------------------------ | -------------- |
+| **Pattern 12**  | **Prefix-Max / Suffix-Min Patterns** | Precompute max-left & min-right arrays | Trapping rainwater, stock buy-sell problems                  | Hard           |
+| **Pattern 13**  | **Divide & Conquer Array Patterns**  | Split array into halves recursively    | Maximum subarray (Kadane + D&C), merge-sort count inversions | Hard           |
+| **Pattern 14**  | **Kadane & DP on Arrays**            | Dynamic programming on linear arrays   | Maximum subarray, circular subarray sum                      | Medium–Hard    |
+| **Pattern 15**  | **Stack-Based Array Patterns**       | Monotonic stack usage                  | Next greater element, stock span, histogram area             | Hard           |
+| **Pattern 16**  | **Matrix Patterns (2D Arrays)**      | Traversal techniques for grids         | Spiral traversal, rotate matrix, search in sorted matrix     | Medium–Hard    |
+| **Pattern 17**  | **Greedy Array Patterns**            | Pick optimal choice at every step      | Jump game, gas station, activity selection                   | Medium–Hard    |

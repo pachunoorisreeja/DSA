@@ -1,24 +1,104 @@
 🚀 LEVEL 1 — Basic String Patterns (Beginner)
 
 Focus: Character traversal, counting, simple string logic.
-    Pattern 1: String Traversal
-            1. Print each character of a string.
-            2. Count vowels in a string.
-            3. Count uppercase, lowercase, digits, and special characters.
-            4. Count frequency of a given character.
-            5. Count words in a sentence (using split).
+    ✅ LEVEL – EASY (Beginner to Intermediate Foundation)
+    ⭐ Pattern 1: Traversal
+            Print each character
+            Print characters with index
+            Count letters, digits, spaces, special chars
+            Convert uppercase → lowercase and vice versa
 
-    Pattern 2: Reverse Operations
-            1. Reverse a string manually (no built-in reverse).
-            2. Reverse each word in a sentence.
-            3. Reverse the order of words in a sentence.
-            4. Check if two strings are reverses of each other.
-    Pattern 3: Palindrome Checks
-            1. Check if a string is a palindrome.
-            2. Check if a sentence is a palindrome (ignore spaces & case).
-            3. Find all palindrome substrings (beginner-level brute force).
-    Pattern 4: Frequency / Counting
-            1. Count occurrence of each character using arrays.
-            2. Count occurrence of each character using HashMap.
-            3. Find first non-repeating character.
-            4. Find first repeating character.
+   ⭐ Pattern 2: Reverse Patterns
+            Reverse a string
+            Reverse without extra space (char array)
+            Reverse words in a sentence
+            Reverse only vowels
+
+   ⭐ Pattern 3: Frequency / Counting
+            Count frequency of each character
+            Count vowels/consonants
+            Most frequent character
+            First non-repeating character
+
+   ⭐ Pattern 4: Palindrome-Based
+            Check if string is palindrome
+            Longest palindrome substring (Level 3)
+            Remove characters to make palindrome
+
+   ⭐ Pattern 5: Two-Pointer Patterns
+            Remove duplicates in a string
+            Skip adjacent duplicates
+            Move vowels to the front/back
+            Reverse only part of string
+
+   ⭐ Pattern 6: Substring Patterns
+            Print all substrings
+            Longest substring without repeating characters
+            Substring count based on rules
+
+   ⚡ LEVEL – MEDIUM (Most Asked in Interviews)
+   These problems test string algorithms, sliding window, hashing, indexing.
+
+   ⭐ Pattern 7: Anagram Patterns
+            Check if two strings are anagrams
+            Group anagrams
+            Check if substring is an anagram
+
+   ⭐ Pattern 8: Sliding Window (Strings)
+            Longest substring with K distinct chars
+            Longest repeating character replacement
+            Minimum window substring
+
+   ⭐ Pattern 9: HashMap / HashSet Patterns
+            Count distinct characters
+            Check for repeated substring
+            Detect duplicates
+
+   ⭐ Pattern 10: Stack-Based Patterns
+            Remove adjacent duplicates
+            Decode strings like "3[a2[b]]"
+            Check valid parentheses
+
+   ⭐ Pattern 11: String Builder Patterns
+            Remove characters efficiently
+            Insert characters efficiently
+            Build output strings for performance
+
+   ⭐ Pattern 12: Numeric + String Mixed Patterns
+            Convert string to integer
+            Validate number
+            Add two numeric strings
+
+🔥 LEVEL – HARD (Advanced DSA on Strings)
+    Used by MAANG, Adobe, Atlassian, Bloomberg for SDE/SDET 1–2.
+   ⭐ Pattern 13: Prefix/Suffix String Patterns
+            Longest prefix which is also suffix
+            KMP prefix-function explanation
+            Remove common prefix/suffix
+   ⭐ Pattern 14: Sorting-Based String Patterns
+            Sort characters inside string
+            Sort words in a string
+   ⭐ Pattern 15: Recursion-Based Patterns
+            Reverse string using recursion
+            Remove target character via recursion
+            Generate all subsequences
+
+   ⭐ Pattern 16: Bit Manipulation on Strings (rare but asked)
+            Toggle case using bitmask
+            Check uppercase/lowercase using bit operations
+
+
+⭐ LEVEL 3 — ADVANCED STRING PATTERNS
+    ⭐ Pattern 17: Dynamic Programming on Strings
+            Longest Palindromic Subsequence
+            Edit Distance
+            Word Break problem
+            Longest Common Subsequence
+    ⭐ Pattern 18: Trie (Prefix Tree)
+            Insert/Search words
+            Auto-complete suggestions
+            Count words with prefix
+
+    ⭐ Pattern 19: Rabin-Karp / Z-Algorithm
+            Pattern searching in O(n)
+            Substring hashing

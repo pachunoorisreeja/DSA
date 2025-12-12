@@ -28,6 +28,10 @@ public class Pattern5 {
         checkHowManyAppearsOddNumberOfTimes(new int[]{1,14,23,34,23,23,56,34,56,78,78,78,78,78,1});
     }
     public static void countFrequencyOfAllElements(int arr[]){
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         Map<Integer, Integer> map = new HashMap<>();
         for (int i:arr){
             if (map.containsKey(i)){
@@ -41,7 +45,11 @@ public class Pattern5 {
         }
     }
     public static void elementThatAppearsMaxTimes(int arr[]){
-        int max = Integer.MIN_VALUE;
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
+        int max = 0;
         Map<Integer, Integer> map = new HashMap<>();
         for (int i:arr){
             if (map.containsKey(i)){
@@ -60,7 +68,11 @@ public class Pattern5 {
         } System.out.println("Element That occurs max number of times is "+value);
     }
     public static void elementThatAppearsMinTimes(int arr[]){
-        int min = 1;
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
+        int min = Integer.MAX_VALUE;
         Map<Integer, Integer> map = new HashMap<>();
         for (int i:arr){
             if (map.containsKey(i)){
@@ -79,6 +91,10 @@ public class Pattern5 {
         }System.out.println("Element That occurs min number of times is "+value);
     }
     public static void elementThatAppearsExactlyTwice(int arr[]){
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         Map<Integer, Integer> map = new HashMap<>();
         for (int i:arr){
             if (map.containsKey(i)){
@@ -96,6 +112,10 @@ public class Pattern5 {
         }System.out.println("Number of Elements that appears twice "+count);
     }
     public static void elementThatAppearsMoreThanExactlyTwice(int arr[]){
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         Map<Integer, Integer> map = new HashMap<>();
         for (int i:arr){
             if (map.containsKey(i)){
@@ -113,6 +133,10 @@ public class Pattern5 {
         }System.out.println("Number of Elements that appears more than twice "+count);
     }
     public static void elementThatAppearsExactlyOnce(int arr[]){
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         Map<Integer, Integer> map = new HashMap<>();
         for (int i:arr){
             if (map.containsKey(i)){
@@ -133,6 +157,10 @@ public class Pattern5 {
         System.out.println("Distinct Element in given array are :"+count);
     }
     public static void elementThatAppearsMoreThanOnce(int arr[]){
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         Map<Integer, Integer> map = new HashMap<>();
         for (int i:arr){
             if (map.containsKey(i)){
@@ -149,6 +177,10 @@ public class Pattern5 {
         }
     }
     public static void checkIfAllAreUnique(int arr[]){
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         Map<Integer, Integer> map = new HashMap<>();
         boolean flag = true;
         for (int i:arr){
@@ -166,6 +198,10 @@ public class Pattern5 {
         }
         System.out.println(false?"Unique":"Not unique");}
     public static void checkHowManyAppearsOddNumberOfTimes(int arr[]){
+        if (arr == null || arr.length == 0){
+            System.out.println("Array is null or empty");
+            return;
+        }
         Map<Integer, Integer> map = new HashMap<>();
         int count = 0;
         for (int i:arr){
