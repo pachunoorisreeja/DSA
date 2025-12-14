@@ -1,4 +1,34 @@
 
+🚀 Level-3: Substring / Subsequence Patterns
+        Pattern 7️⃣ All Substrings Pattern (Brute Force)
+        👉 Generate every substring for analysis.
+            Common Problems:
+            1. Count palindromic substrings
+            2. Find substring with specific sum or pattern
+        Pattern 8️⃣ Subsequence Pattern (Recursive / Bitmask)
+        👉 Used for combinations and string subsets.
+           Examples:
+           1. Generate all subsequences
+           2. Find the longest common subsequence
+
+
+🏆 Summary of All String Patterns
+| Level | Pattern        | Use                         |
+| ----- | -------------- | --------------------------- |
+| 1     | Traversal      | Basic character operations  |
+| 1     | Reverse        | String manipulation         |
+| 1     | Palindrome     | Checks, two-pointer intro   |
+| 1     | Frequency      | HashMap skills              |
+| 2     | Two-Pointer    | Efficient scanning          |
+| 2     | Sliding Window | Optimal substring problems  |
+| 3     | Substring      | Pattern search, brute force |
+| 3     | Subsequence    | Recursive patterns          |
+| 4     | StringBuilder  | Efficient editing           |
+| 4     | Splitting      | Word-level operations       |
+| 4     | Sorting        | Anagram problems            |
+| 5     | HashMap        | Complex patterns            |
+| 5     | Regex          | Validation                  |
+| 5     | DP             | Hard interview problems     |
 
 
 Summary:
@@ -11,16 +41,3 @@ Summary:
 | **Pattern 15**  | **Stack-Based Array Patterns**       | Monotonic stack usage                  | Next greater element, stock span, histogram area             | Hard           |
 | **Pattern 16**  | **Matrix Patterns (2D Arrays)**      | Traversal techniques for grids         | Spiral traversal, rotate matrix, search in sorted matrix     | Medium–Hard    |
 | **Pattern 17**  | **Greedy Array Patterns**            | Pick optimal choice at every step      | Jump game, gas station, activity selection                   | Medium–Hard    |
-
-****************************************************************************************************
-🧮 LEVEL 3: Searching & Sorting Patterns
-Goal: Learn to organize data efficiently.
-| #  | Pattern Name              | Concept                         | Example Problem                |
-| -- | ------------------------- | ------------------------------- | ------------------------------ |
-| 11 | **Binary Search Pattern** | Divide & conquer search         | Search element in sorted array |
-| 12 | **Sorting & Two-Pointer** | Combine sorting with scanning   | 3Sum, Merge intervals          |
-| 13 | **Partitioning Pattern**  | Divide array based on condition | Dutch National Flag Problem    |
-| 14 | **Cyclic Sort Pattern**   | Sorting when values are 1..N    | Find missing number            |
-🧠 Learn skill: Thinking in sorted space and mathematical reasoning.
-
-

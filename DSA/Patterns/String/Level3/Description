@@ -1,0 +1,30 @@
+🚀 Level-3: Substring / Subsequence Patterns
+        Pattern 7️⃣ All Substrings Pattern (Brute Force)
+        👉 Generate every substring for analysis.
+            Common Problems:
+            1. Count palindromic substrings
+            2. Find substring with specific sum or pattern
+        Pattern 8️⃣ Subsequence Pattern (Recursive / Bitmask)
+        👉 Used for combinations and string subsets.
+           Examples:
+           1. Generate all subsequences
+           2. Find the longest common subsequence
+
+
+🏆 Summary of All String Patterns
+| Level | Pattern        | Use                         |
+| ----- | -------------- | --------------------------- |
+| 1     | Traversal      | Basic character operations  |
+| 1     | Reverse        | String manipulation         |
+| 1     | Palindrome     | Checks, two-pointer intro   |
+| 1     | Frequency      | HashMap skills              |
+| 2     | Two-Pointer    | Efficient scanning          |
+| 2     | Sliding Window | Optimal substring problems  |
+| 3     | Substring      | Pattern search, brute force |
+| 3     | Subsequence    | Recursive patterns          |
+| 4     | StringBuilder  | Efficient editing           |
+| 4     | Splitting      | Word-level operations       |
+| 4     | Sorting        | Anagram problems            |
+| 5     | HashMap        | Complex patterns            |
+| 5     | Regex          | Validation                  |
+| 5     | DP             | Hard interview problems     |

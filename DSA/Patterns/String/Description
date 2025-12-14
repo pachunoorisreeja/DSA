@@ -39,6 +39,7 @@ Examples:
     Longest substring without repeating characters
     Longest substring with K distinct characters
     Minimum window substring
+
 🚀 Level-3: Substring / Subsequence Patterns
 7️⃣ All Substrings Pattern (Brute Force)
 👉 Generate every substring for analysis.

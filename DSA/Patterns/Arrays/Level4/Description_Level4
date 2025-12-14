@@ -1,0 +1,18 @@
+
+
+
+
+**********************************************************************
+🔁 LEVEL 4: Subarray / Subsequence Patterns
+Goal: Handle parts of arrays and build logic for dynamic problems.
+| #  | Pattern Name                             | Concept                | Example Problem                |
+| -- | ---------------------------------------- | ---------------------- | ------------------------------ |
+| 15 | **Kadane’s Algorithm**                   | Maximum subarray sum   | Max sum of contiguous subarray |
+| 16 | **All Subarrays Generation**             | Nested loops           | Print all subarrays            |
+| 17 | **Subsequence Generation**               | Recursive pattern      | Generate all subsequences      |
+| 18 | **Longest Increasing Subsequence (LIS)** | DP pattern             | Find LIS length                |
+| 19 | **Prefix Min/Max Arrays**                | Precompute useful info | Trapping rain water problem    |
+🧠 Learn skill: Break large problems into overlapping subproblems.
+
+
+

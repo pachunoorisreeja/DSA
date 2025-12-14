@@ -41,8 +41,10 @@ public class Pattern6_Frequency_CountingPattern {
         // 17. Count pairs whose sum is even (frequency trick)
         countPairsWhoseSumEven(new int[]{1,2,3,4,3});
         // 18. Count subarrays with sum = K (prefix frequency)
+        countSubARraysWithSum(new int[]{1, 2, 3, 2, 1},5);
         // 19. Longest subarray with equal 0s and 1s (freq + prefix)
         // 20. Find first non-repeating element
+        findFirstNonRepeatingCharacter(new int[]{1,2,3,3,21,1,2});
 
     }
     public static void countFreuquencyOfEachElement(int arr[]){
@@ -371,5 +373,47 @@ public class Pattern6_Frequency_CountingPattern {
             }
         }
         System.out.println("Total No of Pairs is "+((evenParis*(evenParis-1)/2)+(oddPairs*(oddPairs-1)/2)));
+    }
+
+    public static void countSubARraysWithSum(int arr[], int k){
+        Map<Integer, Integer> map = new HashMap<>();
+        int prefixSum = 0, needePrefixSum=0, count =0;
+        map.put(0, 1);
+        for (int i: arr){
+            prefixSum+=i;
+            System.out.println("prefixSum "+prefixSum);
+            needePrefixSum = prefixSum-k;
+            System.out.println("needePrefixSum "+needePrefixSum);
+            if (map.containsKey(needePrefixSum)) {
+                System.out.println("needePrefixSum inside "+needePrefixSum);
+                count += map.get(needePrefixSum);
+            }
+            map.put(prefixSum, map.getOrDefault(prefixSum,0)+1);
+       }
+        System.out.println("No of such sub arrays are :"+count);
+    }
+
+    public static void findFirstNonRepeatingCharacter(int arr[]){
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty");
+            return;
+        }
+
+        HashMap<Integer, Integer> map = new LinkedHashMap<>();
+        for (int i: arr){
+            if (map.containsKey(i)){
+                map.put(i, map.get(i)+1);
+            }else{
+                map.put(i, 1);
+            }
+
+        }
+        System.out.println("First Non Repeating char is: ");
+        for (Map.Entry<Integer, Integer> entry: map.entrySet()){
+           if (entry.getValue()==1){
+               System.out.println(entry.getKey());
+               return;
+           }
+        }
     }
     }

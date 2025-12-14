@@ -1,0 +1,32 @@
+
+
+
+
+**********************************************************************
+🧠 LEVEL 5: Advanced & Interview Patterns
+Goal: Build confidence with real interview logic.
+| #  | Pattern Name                    | Concept         | Example Problem                     |
+| -- | ------------------------------- | --------------- | ----------------------------------- |
+| 20 | **Matrix Patterns (2D arrays)** | Nested loops    | Rotate matrix, spiral print         |
+| 21 | **Merge Intervals Pattern**     | Interval logic  | Merge overlapping intervals         |
+| 22 | **Monotonic Stack Pattern**     | Stack + array   | Next Greater Element                |
+| 23 | **Fast & Slow Pointers**        | Detect cycles   | Linked list / array cycle detection |
+| 24 | **Bit Manipulation Pattern**    | Binary thinking | Find single non-duplicate element   |
+
+
+24 **Bit Manipulation Pattern**
+**********************************************
+🧠 Full Bit Manipulation Roadmap (Interview)
+
+Here are the patterns you MUST learn:
+
+⭐ (1) XOR → Single number
+⭐ (2) Bits Count → Single number when others appear 3 times
+⭐ (3) XOR + Bit Split → Find 2 unique numbers
+⭐ (4) Missing number using XOR
+⭐ (5) Find power of 2 using bit
+⭐ (6) Count set bits — Brian Kernighan algorithm
+⭐ (7) Reverse bits
+⭐ (8) Bitmask — subsets generation
+⭐ (9) Detect if bit is ON/OFF
+⭐ (10) Add numbers without + operator (using XOR + AND)

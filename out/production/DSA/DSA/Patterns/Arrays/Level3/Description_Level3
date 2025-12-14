@@ -11,3 +11,16 @@ Summary:
 | **Pattern 15**  | **Stack-Based Array Patterns**       | Monotonic stack usage                  | Next greater element, stock span, histogram area             | Hard           |
 | **Pattern 16**  | **Matrix Patterns (2D Arrays)**      | Traversal techniques for grids         | Spiral traversal, rotate matrix, search in sorted matrix     | Medium–Hard    |
 | **Pattern 17**  | **Greedy Array Patterns**            | Pick optimal choice at every step      | Jump game, gas station, activity selection                   | Medium–Hard    |
+
+****************************************************************************************************
+🧮 LEVEL 3: Searching & Sorting Patterns
+Goal: Learn to organize data efficiently.
+| #  | Pattern Name              | Concept                         | Example Problem                |
+| -- | ------------------------- | ------------------------------- | ------------------------------ |
+| 11 | **Binary Search Pattern** | Divide & conquer search         | Search element in sorted array |
+| 12 | **Sorting & Two-Pointer** | Combine sorting with scanning   | 3Sum, Merge intervals          |
+| 13 | **Partitioning Pattern**  | Divide array based on condition | Dutch National Flag Problem    |
+| 14 | **Cyclic Sort Pattern**   | Sorting when values are 1..N    | Find missing number            |
+🧠 Learn skill: Thinking in sorted space and mathematical reasoning.
+
+

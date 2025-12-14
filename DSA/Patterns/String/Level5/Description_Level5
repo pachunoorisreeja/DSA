@@ -1,0 +1,19 @@
+🚀 Level-5 Advanced Patterns
+        Pattern 1️⃣2️⃣ HashMap + String Pattern
+         👉 Used in anagram problems and frequency maps.
+         Examples:
+         1. Group Anagrams
+         2. Check isomorphic strings
+         3. First non-repeating character
+         Pattern 1️⃣3️⃣ Regex / Pattern-Matching Pattern
+         👉 Very powerful for filtering/validating strings.
+         Examples:
+         1. Validate email
+         2. Validate mobile number
+         3. Extract digits/words
+        Pattern 1️⃣4️⃣ DP (Dynamic Programming) String Pattern
+        👉 Hard but useful for interviews.
+        Examples:
+        1. Longest Palindromic Subsequence
+        2. Edit Distance
+        3. Word Break Problem

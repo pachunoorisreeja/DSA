@@ -108,3 +108,15 @@ Summary:
 | **Pattern 9**   | **Two-Pointer Advanced**              | Sorted-array operations             | Pair sum, remove duplicates, merge sorted arrays          | Medium         |
 | **Pattern 10**  | **Searching Patterns**                | Binary search and variants          | Find first occurrence, peak element, search rotated array | Medium–Hard    |
 | **Pattern 11**  | **Sorting-Based Patterns**            | Leverage sorting for optimization   | Three-sum, closest pair, sort colors                      | Medium         |
+
+*****************************************************************
+⚙️ LEVEL 2: Conditional & Two-Pointer Patterns
+Goal: Learn how to reduce complexity and handle pairs efficiently.
+| #  | Pattern Name                   | Concept                     | Example Problem                              |
+| -- | ------------------------------ | --------------------------- | -------------------------------------------- |
+| 6  | **Two Sum Pattern**            | Check pairs with sum target | Find if two numbers add to `k`               |
+| 7  | **Two Pointers Opposite Ends** | Shrinking window            | Check if array is palindrome                 |
+| 8  | **Sliding Window**             | Maintain window sum         | Find max sum of subarray of size k           |
+| 9  | **Prefix Sum**                 | Precompute running totals   | Find subarray sum quickly                    |
+| 10 | **Difference Array**           | Range updates               | Increment values in given ranges efficiently |
+🧠 Learn skill: Optimize O(n²) → O(n) using smart traversal.

@@ -65,3 +65,14 @@ Summary:
 | **Pattern 4**   | **Min / Max Patterns**     | Track smallest/largest values             | Find max, min, 2nd max/min, diff max-min                 | Easy           |
 | **Pattern 5**   | **Two-Pointer Basics**     | Use two pointers to process array faster  | Move zeros, reverse array, swap halves                   | Easy–Medium    |
 
+*******************************************************
+🧩 LEVEL 1: Basic Traversal & Manipulation Patterns
+Goal: Understand how to access, loop, and modify elements.
+| # | Pattern Name              | Concept                       | Example Problem                 |
+| - | ------------------------- | ----------------------------- | ------------------------------- |
+| 1 | **Traversal**             | Loop through all elements     | Print all elements of an array  |
+| 2 | **Reverse Traversal**     | Iterate from end to start     | Print array in reverse          |
+| 3 | **Sum / Product Pattern** | Aggregate elements            | Find sum or average of elements |
+| 4 | **Find Min / Max**        | Compare elements              | Find largest/smallest element   |
+| 5 | **Counting / Frequency**  | Use counter arrays or HashMap | Count frequency of numbers      |
+🧠 Learn skill: Basic for-loops, conditions, and thinking in indexes.
