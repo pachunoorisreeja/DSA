@@ -1,4 +1,4 @@
-package DSAConcepts.Arrays.Top50Problems;
+package DSAConcepts.Arrays.GeekForGeekTop50Problems;
 
 import java.util.Arrays;
 
