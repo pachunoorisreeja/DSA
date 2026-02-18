@@ -1,13 +1,28 @@
 package DSA.Logic_Building;
 
-public class The_dice_problem_Efficient {
+public class ClosesNumber_Efficient {
     public static void main(String[] args) {
-        int i=5;
-
-        System.out.println("result "+(7-i));
+      int n=13, m=4;
+      int q=n/m;
+      int n1= m*q;
+      int n2= n*m>0?m*(q+1):m*(q-1);
+      if(Math.abs(n-n1)< Math.abs(n-n2))
+          System.out.println("result "+n1);
+        System.out.println("result "+n2);
     }
 }
 /*
-In a normal 6-faced dice, 1 is opposite to 6, 2 is
-opposite to 5, and 3 is opposite to 4. Hence a normal if-else-if block can be placed
+We first compute the quotient q = n / m, then calculate two candidates:
+
+n1 = m * q
+ This is the closest multiple of m that is less than or equal to n.
+n2 = m * (q + 1) or m * (q - 1)
+ We choose q + 1 or q - 1 based on the signs of n and m:
+If n and m have the same sign, use n2 = m * (q + 1)
+ This moves in the direction toward n, getting the next closest multiple above n.
+If n and m have opposite signs, use n2 = m * (q - 1)
+ This accounts for the fact that increasing q would move away from n due to the sign flip, so we instead go backward to get the next closest multiple.
+Then we return the one (n1 or n2) that has the smaller absolute difference from n.
+
+If both have the same distance from n, return the one with the greater absolute value, as required.
  */

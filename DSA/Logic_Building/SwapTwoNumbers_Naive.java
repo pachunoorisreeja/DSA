@@ -1,16 +1,15 @@
 package DSA.Logic_Building;
 
-public class SumOfSquaresOfNaturalNumbers_Formula {
+public class SwapTwoNumbers_Naive {
     public static void main(String[] args) {
-        int n = 2;
-        System.out.println(result(n));
-    }
-
-    public static int result(int n) {
-        int sum = (n*(n+1)*(2*n+1))/6;
-        return sum;
+       int a=10, b=20;
+       int temp =a;
+       a=b;
+       b=temp;
+        System.out.println("After swap a is "+a+" and b is "+b);
     }
 }
 /*
-   Using Mathematical Formulae - O(1) Time and O(1) Space
+   Time Complexity: O(1)
+Auxiliary Space: O(1)
      */

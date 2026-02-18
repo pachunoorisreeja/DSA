@@ -2,7 +2,7 @@ package DSA.Stack;
 
 import java.util.ArrayList;
 
-public class NextGreaterElementInArray {
+public class NextGreaterElementInArrayNaiveApproach {
     public static void main(String[] args) {
         ArrayList<Integer> res = new ArrayList<>();
         int arr[] = {1, 3, 2, 4};

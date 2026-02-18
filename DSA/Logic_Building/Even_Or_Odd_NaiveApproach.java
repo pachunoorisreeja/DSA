@@ -1,6 +1,6 @@
-package DSA.Logic_Building.Check_Even_or_Odd;
+package DSA.Logic_Building;
 
-public class NaiveApproach {
+public class Even_Or_Odd_NaiveApproach {
     public static void main(String[] args) {
         int n=5;
         if(evenOrOdd(n)){

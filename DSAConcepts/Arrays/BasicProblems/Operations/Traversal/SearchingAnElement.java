@@ -1,4 +1,4 @@
-package DSAConcepts.Arrays.BasicProblems.Operations;
+package DSAConcepts.Arrays.BasicProblems.Operations.Traversal;
 
 public class SearchingAnElement {
     public static void main(String[] args) {

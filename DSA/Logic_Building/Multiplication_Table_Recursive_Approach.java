@@ -1,6 +1,6 @@
 package DSA.Logic_Building;
 
-public class Multiplication_Table_Iterative_Approach {
+public class Multiplication_Table_Recursive_Approach {
     public static void main(String[] args) {
         int n=5;
         for(int i=1;i<=10;i++){

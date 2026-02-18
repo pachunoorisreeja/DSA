@@ -1,4 +1,4 @@
-package DSAConcepts.Arrays.BasicProblems.Operations.Traversal;
+package DSAConcepts.Arrays.BasicProblems.Operations.Search;
 
 public class Linear_Traversal {
     public static void main(String[] args) {

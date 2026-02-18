@@ -1,6 +1,6 @@
-package DSA.Logic_Building.Check_Even_or_Odd;
+package DSA.Logic_Building;
 
-public class Efficient_Approach {
+public class Even_Or_Odd_Efficient_Approach {
     public static void main(String[] args) {
     int n=10;
         if((n&1)==1) {

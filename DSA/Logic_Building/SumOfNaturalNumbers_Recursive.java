@@ -1,12 +1,17 @@
 package DSA.Logic_Building;
 
-public class SumOfNaturalNumbers_NaiveApproach {
+public class SumOfNaturalNumbers_Recursive {
     public static void main(String[] args) {
         int n=5;
-        int sum =0;
-        for(int i=1;i<=5;i++){
-           sum+=i;
-        }
-        System.out.println("Sum is "+sum);
+        System.out.println(sum(n));
+    }
+    public static int sum(int n){
+        if(n==1)
+            return 1;
+        return n+sum(n-1);
     }
     }
+
+    /*
+    [Alternative Approach] Using Recursion -O(n) and O(n) Space
+     */

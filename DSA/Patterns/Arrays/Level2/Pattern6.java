@@ -1,7 +1,7 @@
 package DSA.Patterns.Arrays.Level2;
 
 // two pointer problems
-public class Pattern1 {
+public class Pattern6 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         //✅ Example 1: Reverse an array in place

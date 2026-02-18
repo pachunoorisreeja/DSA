@@ -1,4 +1,4 @@
-package DSAConcepts.Arrays.GeekForGeekTop50Problems;
+package DSAConcepts.Arrays.GeekForGeekTop50Problems.Easy;
 
 public class ThirdLargestElement {
     public static void main(String[] args) {

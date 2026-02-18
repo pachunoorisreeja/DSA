@@ -3,14 +3,16 @@ package DSAConcepts.Arrays.BasicProblems.Operations.Deletion;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class DeleteFromBegining {
+public class DeleteFromBeginingCustomMethod {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
-        list.remove(0);
-        System.out.println(list);
-        System.out.println("\nArray after insertion");
-        for (int i = 0; i < list.size(); i++)
-            System.out.print(list.get(i) + " ");
+        int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int i=1;i<arr.length;i++){
+            arr[i-1]=arr[i];
+        }
+        arr[arr.length-1]=0;
+        System.out.println(Arrays.toString(arr));
     }
+
 }
-/* Time Complexity: O(n), where n is the size of the array.*/
+/* Time Complexity: O(n)
+Auxiliary Space: O(1)*/

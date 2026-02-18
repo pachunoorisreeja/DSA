@@ -1,21 +1,15 @@
 package DSA.Logic_Building;
 
-public class Even_Or_Odd_NaiveApproach {
+public class SumOfNaturalNumbers_NaiveApproach {
     public static void main(String[] args) {
         int n=5;
-        if(evenOrOdd(n)){
-            System.out.println("Even Number");
-        }else {
-            System.out.println("Odd Number");
+        int sum =0;
+        for(int i=1;i<=5;i++){
+           sum+=i;
         }
+        System.out.println("Sum is "+sum);
     }
-    public static boolean evenOrOdd(int number){
-        int rem = number % 2;
-        if(rem==0){
-            return true;
-        }else{
-            return false;
-        }
     }
-}
-//- O(1) Time and O(1) Space
+/*
+[Naive Approach] Using Loop - O(n) Time and O(1) Space
+ */

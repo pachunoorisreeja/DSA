@@ -1,4 +1,4 @@
-package DSAConcepts.Arrays.BasicProblems.Operations;
+package DSAConcepts.Arrays.BasicProblems.Operations.Traversal;
 
 public class Reverse_Traversal {
     public static void main(String[] args) {
