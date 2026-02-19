@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class TwoPointer {
     public static void main(String[] args) {
+        System.out.println(Arrays.toString(reverseAnCharArray(new char[]{'h','e','l','l','o'})));
         System.out.println(Arrays.toString(reverseAnArray(new int[]{1,2,3,4,5})));
+        System.out.println("validPlaindrome "+validPlaindrome("madam"));
         System.out.println(checkPalindrome(new int[]{1,2,3,2,1}));
         System.out.println(Arrays.toString(pairSum(new int[]{1,2,3,4,6}, 6)));
         System.out.println("No of unique elements "+removeDuplicatesfromSortedArray(new int[]{1,1,2,2,3}));
@@ -13,8 +15,28 @@ public class TwoPointer {
         System.out.println("Two sumII");
         System.out.println(Arrays.toString(twoSumII(new int[]{2,7,11,15}, 9)));
         System.out.println("removeElement "+removeElement(new int[]{3,2,2,3},3));
+        System.out.println("squaresOfSortedArray "+Arrays.toString(test(new int[]{-4, -1, 0, 3, 10})));
+        System.out.println("containerWithMostWater "+containerWithMostWater(new int[]{1,8,6,2,5,4,8,3,7}));
 
     }
+
+    // [Two Pointer - Opposite Direction] EASY: 1️⃣ Reverse String
+    public static char[] reverseAnCharArray(char c[]){
+        if (c == null || c.length==0) {
+            throw new IllegalArgumentException("Array is null or empty");
+        }
+        int left =0, right = c.length-1;
+        while (left<right){
+            char ch = c[left];
+            c[left] =c[right];
+            c[right] = ch;
+            left++;
+            right--;
+        }
+        return c;
+    }
+
+    // [Two Pointer - Opposite Direction] EASY: 1️⃣ Reverse Array
     public static int[] reverseAnArray(int arr[]){
         if (arr == null || arr.length==0) {
             throw new IllegalArgumentException("Array is null or empty");
@@ -29,6 +51,24 @@ public class TwoPointer {
         }
         return arr;
     }
+
+    // [Two Pointer - Opposite Direction] EASY: 2️⃣ Valid Palindrome
+    public static boolean validPlaindrome(String s){
+        if (s == null || s.length() == 0)
+            throw new IllegalArgumentException("Array is null or empty");
+        int left =0, right = s.length()-1;
+        char c[] = s.toCharArray();
+        while (left<right){
+            if(s.charAt(left)!=s.charAt(right)) {
+                return false;
+                    }
+            left++;
+            right--;
+        }
+        return true;
+    }
+
+    // [Two Pointer - Opposite Direction] EASY: 2️⃣ Valid Palindrome
     public static boolean checkPalindrome(int arr[]){
         if (arr == null || arr.length == 0)
             throw new IllegalArgumentException("Array is null or empty");
@@ -92,28 +132,29 @@ public class TwoPointer {
             slow++;
         }
     return arr;}
+
+    // [Two Pointer - Opposite Direction] EASY: 4️⃣ Squares of Sorted Array
     public static int[] squaresOfSortedArray(int arr[]){
         System.out.println("squaresOfSortedArray");
         int index = arr.length-1, left =0, right = arr.length-1;
         int result[] = new int[arr.length];
-        for (int i=0;i<arr.length;i++){ // -4, -1, 0, 3, 10 // 16,1,0,9,100
+        // -4, -1, 0, 3, 10 // 16,1,0,9,100
             while (left<=right) {
             int leftsquare =  arr[left]*arr[left];
                 int rightsquare =  arr[right]*arr[right];
-                if (arr[leftsquare]>arr[rightsquare]){
-                    result[index] = arr[leftsquare];
+                if (leftsquare>rightsquare){
+                    result[index] = leftsquare;
                     left++;
                 }
                 else {
-                    result[index] = arr[rightsquare];
+                    result[index] = rightsquare;
                     right--;
                 }
                 index--;
-
-            }
-
         }
-   return arr; }
+   return result; }
+
+    // [Two Pointer - Opposite Direction] EASY: 3️⃣ Two Sum II (Sorted Array)
     public static int[] twoSumII(int arr[], int target){
         int left =0, right = arr.length-1;
         while (left < right){
@@ -131,6 +172,7 @@ public class TwoPointer {
         }
     return new int[]{-1, -1};
     }
+
     public static int removeElement(int arr[], int value){
         int slow=0;
         for (int fast =0; fast<arr.length;fast++){
@@ -142,4 +184,42 @@ public class TwoPointer {
         }
        return slow;
     }
+
+    // [Two Pointer - Opposite Direction]  MEDIUM 5️⃣ Container With Most Water , input: 1,8,6,2,5,4,8,3,7
+    public static int containerWithMostWater(int arr[]){
+        int left=0, right = arr.length-1;
+        int maxArea=0, max=0;
+        while (left<right){
+            maxArea = Math.min(arr[left], arr[right])*(right-left);
+            max = Math.max(max, maxArea) ;
+            if (arr[left]<arr[right]){
+                left++;
+            }else{
+                right--;
+            }
+
+        }
+        return max;
+    }
+
+    public static int[] test(int arr[]){
+        //int arr[]={-4, -1, 0, 3, 10};
+        int result[] = new int[arr.length];
+        int index =  arr.length-1;
+        int left =0, right = arr.length-1;
+        while (left<=right){
+            int leftSquare =  arr[left]*arr[left];
+            int rightSuare =  arr[right]*arr[right];
+            if (leftSquare>rightSuare){
+                result[index] = leftSquare;
+                left++;
+            }else{
+                result[index] = rightSuare;
+                right--;
+            }
+            index--;
+        }
+
+    return result;}
 }
+
